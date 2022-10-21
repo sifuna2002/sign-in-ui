@@ -1,0 +1,234 @@
+body{
+    background-image: url("bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+.sign-in-container>.heading{
+    width: 130px;
+    line-height: 2px;
+    text-align: left;
+    margin-bottom: 4px;
+}
+
+.sign{
+    border-bottom: .9px solid #3b96ea;
+    width: 24px;
+    margin-bottom: 3px;
+    margin-top: 10px;
+}
+.sign>h1{
+    font-size: 5px;
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+}
+.heading>.desc{
+    color: rgba(255,255,255,0.5);
+    font-size: 4px;
+}
+.sign-in-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(50,65,94,.5);
+    border-radius: 5px;
+    width: 50%;
+    box-shadow: 0 0 5px 0 rgba(0,0,0,.8);
+}
+form{
+    width: 100%;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    margin-left: 18%;
+    margin-bottom: 5px;
+}
+input{
+    width: 75%;
+    height: 6px;
+    border: none;
+    border-bottom: 0.5px solid rgba(255,255,255,0.5);
+    background: transparent;
+    outline: none;
+    color: rgba(255,255,255,0.5);
+    font-size: 4px;
+    text-align: left;
+    margin-left: 1%;
+    padding-left: 10px;
+    padding-bottom: 4px;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgba(255,255,255,0.5);
+    opacity: 1; /* Firefox */
+  }
+.email i {
+    position: absolute;
+    font-size: 5px;
+    bottom: 5px;
+    color: rgb(204, 194, 194);
+    cursor: pointer;
+}
+  
+.email {
+    width: 100%;
+    position: relative;
+}
+
+.password i {
+    position: absolute;
+    font-size: 5px;
+    bottom: 5px;
+    color: rgb(204, 194, 194);
+    cursor: pointer;
+}
+  
+.password {
+    position: relative;
+}
+.icon-l{
+    left: 2px;
+}
+.icon-r{
+    right: 20%;
+}
+
+button{
+    width: 40px;
+    height: 12px;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    background: #3b96ea;
+    color: #fff;
+    font-size: 4px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+button:hover{
+    background: #fff;
+    color: skyblue;
+}
+.buttons{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 10px;
+    width: 84%;
+}
+.or{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 84%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.or > span{
+    color: gray;
+    font-size: 5px;
+    margin: 0 10px;
+}
+.left,.rigth{
+    width: 53px;
+    border-bottom: 0.5px solid gray;
+}
+.social{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 84%;
+}
+.social a{
+    width: 40%;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    color: white;
+    background-color: #32415e;
+    text-decoration: none;
+    font-size: 10px;
+}
+.social i{
+    font-size: 5px;
+}
+.social a > span{
+    font-size: 4px;
+    margin-left: 3px;
+}
+.forgot{
+    color: gray;
+    font-size: 4px;
+    margin-top: 7px;
+    text-decoration: none;
+    text-align: center;
+    width: 84%;
+}
+.forgot a{
+    color: gray;
+    text-decoration: none;
+}
+.dont{
+    color: gray;
+    font-size: 4px;
+    margin-top: 5px;
+    text-align: center;
+}
+.dont a{
+    color: white;
+    text-decoration: none;
+}
+
+.checkbox{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+}
+.checkbox > input{
+    width: 7px;
+    height: 7px;
+    margin-right: 2px;
+    outline: none;
+    border: none;
+    color: transparent;
+    background-color: transparent;
+}
+.checkbox label{
+    color: rgba(255,255,255,0.5);
+    font-size: 4px;
+    text-align: center;
+}
+
+
+
+@media screen and (max-width: 600px){
+    .container{
+        flex-direction: column;
+    }
+    .heading{
+        width: 100%;
+        text-align: center;
+    }
+    h1{
+        font-size: 20px;
+    }
+    .desc{
+        font-size: 12px;
+    }
+}
